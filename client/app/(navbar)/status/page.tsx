@@ -2,6 +2,9 @@
 import { useState, useEffect } from 'react';
 import styles from '../style.module.css';
 import fetchGarbageState from '@/app/helper';
+import gPng from "@/public/graph.png";
+import aPng from "@/public/amount.png";
+
 
 export default function Status() {
   const [status, setStatus] = useState<string | null>(null);
@@ -41,7 +44,7 @@ export default function Status() {
             }} 
             width="540" 
             height="480" 
-            src="https://charts.mongodb.com/charts-litterlensdb-bzszzhc/embed/charts?id=66af3ef1-f332-41e5-8e75-871405544387&maxDataAge=3600&theme=light&autoRefresh=true">
+            src={gPng.src}>
           </iframe>
         </div>
 
@@ -61,7 +64,7 @@ export default function Status() {
               }}
               width="460"
               height="250"
-              src="https://charts.mongodb.com/charts-litterlensdb-bzszzhc/embed/charts?id=66af3f58-986b-4c24-8132-f616d9e51b34&maxDataAge=3600&theme=light&autoRefresh=true">
+              src="aPng.src">
             </iframe>
           </div> 
         </div>

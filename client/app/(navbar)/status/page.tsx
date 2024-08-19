@@ -64,7 +64,7 @@ export default function Status() {
               }}
               width="460"
               height="250"
-              src="aPng.src">
+              src={aPng.src}>
             </iframe>
           </div> 
         </div>
